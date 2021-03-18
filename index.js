@@ -19,14 +19,14 @@ client.on('message', msg => {
         .setDescription(`${msg.content}`)
         .setFooter(`${msg.guild.name} | SpyBot v1`)
         .setColor(0xFF0000)
-        client.channels.cache.get('821900375090135041').send(embed)
+        client.channels.cache.get('Spy Channel').send(embed) //Input which channel ID you want to receive the messages
     } else {
         let embed = new Discord.MessageEmbed()
         .setAuthor(`${msg.author.tag}`, `${msg.author.avatarURL()}`)
         .setDescription(`${msg.content}`)
         .setFooter(`${msg.guild.name} | SpyBot v1`)
         .setColor(0x33FF33)
-        client.channels.cache.get('821900375090135041').send(embed)
+        client.channels.cache.get('Spy Channel').send(embed) //Input which channel ID you want to receive the messages
     }
 }
 })
